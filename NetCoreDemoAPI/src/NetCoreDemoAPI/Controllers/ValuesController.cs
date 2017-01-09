@@ -23,6 +23,12 @@ namespace NetCoreDemoAPI.Controllers
             return "value";
         }
 
+        [HttpGet("{word}")]
+        public string Get(string word)
+        {
+            return word;
+        }
+
         // POST api/values
         [HttpPost]
         public void Post([FromBody]string value)
